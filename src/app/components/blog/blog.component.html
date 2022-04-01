@@ -1,0 +1,13 @@
+<!--<div *ngFor="let item of items$">-->
+<!--  <blog-item>-->
+<!--  </blog-item>-->
+<!--  {{item.text}}-->
+<!--</div>-->
+<div *ngFor="let item of items$" style="width: 18rem;">
+  <div class="card" style="width: 18rem; margin: 10px;">
+    <div class="card-body">
+      <blog-item [image]="item.image" [text]="item.text">
+      </blog-item>
+    </div>
+  </div>
+</div>
